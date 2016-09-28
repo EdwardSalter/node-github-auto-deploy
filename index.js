@@ -42,7 +42,7 @@ var script = process.argv[3];
 if (script) {
   fs.stat(script, function(err, stats) {
 
-    if ( ! (stats.mode & 0100) ) {
+    if ( stats && ! (stats.mode & 0100) ) {
       console.error(script, 'is not executable');
       process.exit(1);
     }
