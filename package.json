@@ -13,7 +13,8 @@
   "author": "Josh Betz",
   "license": "MIT",
   "dependencies": {
-    "githubhook": "~1.2.0"
+    "githubhook": "~1.2.0",
+    "node-user-config": "^0.1.0"
   },
   "devDependencies": {
     "jshint": "^2.7.0"

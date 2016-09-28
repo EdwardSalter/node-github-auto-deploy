@@ -1,0 +1,16 @@
+{
+    "port": "3240",
+    "secret": "GITHUB_SECRET",
+    "registry": [
+        {
+            "repo": "/var/www/node-app1",
+            "script": "/var/www/update_node_app.sh",
+            "script_args": "${repo} arg2 arg3"
+        },
+        {
+            "repo": "/var/www/node-app2",
+            "script": "/var/www/update_node_app.sh",
+            "script_args": ["${repo}", "some_arg"]
+        }
+    ]
+}
