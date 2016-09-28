@@ -50,7 +50,7 @@ if (script) {
 }
 
 github.listen();
-github.on('deployment', function(repo, ref, data) {
+github.on('push', function(repo, ref, data) {
   // TODO: Check repo is the repo in dir
   var sha = data.deployment.sha;
 
