@@ -52,7 +52,7 @@ if (script) {
 github.listen();
 github.on('push', function(repo, ref, data) {
   // TODO: Check repo is the repo in dir
-  var sha = data.deployment.sha;
+  var sha = data.after;
 
   var command = 'git fetch && git checkout ' + sha;
   child.exec(command, { cwd: dir }, function(err, stdout, stderr) {
